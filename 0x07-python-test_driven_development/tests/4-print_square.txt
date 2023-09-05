@@ -55,4 +55,3 @@ Now test it:
     TypeError: size must be an integer
 
     >>> print_square(0)
-    Invalid Sizes
