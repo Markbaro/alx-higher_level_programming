@@ -27,6 +27,9 @@ that value is equivalent to using the `+` operator.
     >>> add_integer(-2, -3)
     -5
 
+    >>> add_integer(2)
+    100
+
     >>> add_integer()
     Traceback (most recent call last):
     TypeError: add_integer() missing 1 required positional argument: 'a'
@@ -55,3 +58,6 @@ that value is equivalent to using the `+` operator.
     Traceback (most recent call last):
     ValueError: cannot convert float NaN to integer
 
+    >>> add_integer("alx", "school")
+    Traceback (most recent call last):
+    TypeError: a must be an integer
