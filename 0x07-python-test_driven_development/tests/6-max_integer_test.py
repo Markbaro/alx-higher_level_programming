@@ -55,5 +55,10 @@ class TestMaxInteger(unittest.TestCase):
         """Test with a None as parameter: should raise a TypeError"""
         self.assertRaises(TypeError, max_integer, None)
 
+    def test_max_at_begginning(self):
+        """Test a list with a beginning max value."""
+        max_at_beginning = [9, 8, 7, 6]
+        self.assertEqual(max_integer(max_at_beginning), 4)
+
 if __name__ == '__main__':
     unittest.main()
